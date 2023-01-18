@@ -1,0 +1,45 @@
+{
+    "screeningRooms": [
+        {
+            "name": "Screen Room 1",
+            "screenInstalled":
+            {
+                "name": "RX diamond screen",
+                "id": "s01",
+                "value": 3000,
+                "size": "medium",
+                "tech": "projection"
+            },
+            "moviePlaying": {
+                "name": "Night of the Eagle",
+                "genre": "horror",
+                "id": "332"
+            },
+            "capacity": 100,
+            "decoration": 4,
+            "comfort": 2,
+            "safety": 9,
+            "condition": 89
+        },
+        {
+            "name": "Screen Room 2",
+            "screenInstalled": {
+                "name": "RX diamond screen",
+                "id": "s01",
+                "value": 3000,
+                "size": "medium",
+                "tech": "projection"
+            },
+            "moviePlaying": {
+                "name": "Lord of the Rings",
+                "genre": "adventure",
+                "id": "099"
+            },
+            "capacity": 400,
+            "decoration": 8,
+            "comfort": 6,
+            "safety": 6,
+            "condition": 55
+        }
+    ]
+}

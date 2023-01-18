@@ -1,0 +1,32 @@
+{
+    "screens": [
+        {
+            "name": "RX diamond screen",
+            "id": "s01",
+            "value": 3000,
+            "size": "medium",
+            "tech": "projection"
+        },
+        {
+            "name": "White alabaster sheet screen",
+            "id": "s02",
+            "value": 200,
+            "size": "small",
+            "tech": "projection"
+        },
+        {
+            "name": "Phosphate free PVC screen",
+            "id": "s03",
+            "value": 1400,
+            "size": "large",
+            "tech": "projection"
+        },
+        {
+            "name": "Plasma 2000rt vibra screen",
+            "id": "s04",
+            "value": 9200,
+            "size": "medium",
+            "tech": "plasma"
+        }
+    ]
+}

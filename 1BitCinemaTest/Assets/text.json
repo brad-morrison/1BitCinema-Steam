@@ -1,0 +1,63 @@
+{
+   "name":"Bradley",
+   "wealth":256,
+   "moviesOwned":[
+      {
+         "name":"Unexpected Meetings",
+         "genre":"romance",
+         "id":"232"
+      },
+      {
+         "name":"Night of the Eagle",
+         "genre":"horror",
+         "id":"332"
+      },
+      {
+         "name":"Lord of the Rings",
+         "genre":"adventure",
+         "id":"099"
+      }
+   ],
+   "screeningRooms":[
+      {
+         "name":"Screen Room 1",
+         "screenInstalled":{
+            "name":"RX diamond screen",
+            "id":"s01",
+            "value":3000,
+            "size":"medium",
+            "tech":"projection"
+         },
+         "moviePlaying":{
+            "name":"Lord of the Rings",
+            "genre":"adventure",
+            "id":"099"
+         },
+         "capacity":100,
+         "decoration":4,
+         "comfort":2,
+         "safety":9,
+         "condition":89
+      },
+      {
+         "name":"Screen Room 2",
+         "screenInstalled":{
+            "name":"Phosphate free PVC screen",
+            "id":"s03",
+            "value":1400,
+            "size":"large",
+            "tech":"projection"
+         },
+         "moviePlaying":{
+            "name":"Unexpected Meetings",
+            "genre":"romance",
+            "id":"232"
+         },
+         "capacity":400,
+         "decoration":8,
+         "comfort":6,
+         "safety":6,
+         "condition":55
+      }
+   ]
+}
