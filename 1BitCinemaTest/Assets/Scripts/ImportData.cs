@@ -21,7 +21,7 @@ public class ImportData : MonoBehaviour
     {
         public string name;
         public float wealth;
-        public List<Movie> ownedMovies;
+        public List<string> ownedMovies;
         public List<ScreeningRoom> screeningRooms;
     }
 
@@ -48,7 +48,9 @@ public class ImportData : MonoBehaviour
         playerData = JsonUtility.FromJson<PlayerData>(playerJSON.text);
         screenData = JsonUtility.FromJson<ScreenData>(screenJSON.text);
         screeningRoomData = JsonUtility.FromJson<ScreeningRoomData>(screeningRoomJSON.text);
+
     }
+
 
     // get movie from imported data by ID
     public Movie GetMovieWithID(string id)

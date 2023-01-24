@@ -8,4 +8,5 @@ public class Movie
     public string name;
     public string genre;
     public string id;
+    public float runtime;
 }

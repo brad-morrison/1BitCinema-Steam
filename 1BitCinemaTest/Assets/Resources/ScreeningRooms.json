@@ -10,11 +10,6 @@
                 "size": "medium",
                 "tech": "projection"
             },
-            "moviePlaying": {
-                "name": "Night of the Eagle",
-                "genre": "horror",
-                "id": "332"
-            },
             "capacity": 100,
             "decoration": 4,
             "comfort": 2,
@@ -29,11 +24,6 @@
                 "value": 3000,
                 "size": "medium",
                 "tech": "projection"
-            },
-            "moviePlaying": {
-                "name": "Lord of the Rings",
-                "genre": "adventure",
-                "id": "099"
             },
             "capacity": 400,
             "decoration": 8,

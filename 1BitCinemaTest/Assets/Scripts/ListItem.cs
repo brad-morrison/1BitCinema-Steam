@@ -5,7 +5,7 @@ using TMPro;
 
 public class ListItem : MonoBehaviour
 {
-    public MovieList movieList;
+    MovieList movieList;
 
     private void Start()
     {

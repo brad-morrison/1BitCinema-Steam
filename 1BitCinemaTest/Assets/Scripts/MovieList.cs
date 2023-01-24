@@ -5,10 +5,16 @@ using TMPro;
 
 public class MovieList : MonoBehaviour
 {
+    public GameObject titleObj;
     public Controller controller;
     public GameObject listPrefab;
     public int listItemsCount;
     public float listItemOffsetY;
+
+    private void Start()
+    {
+        PopulateTable(controller.player.ownedMovies);
+    }
 
     public void PopulateTable(List<Movie> movieList)
     {
@@ -16,8 +22,8 @@ public class MovieList : MonoBehaviour
         {
             listItemsCount++;
             SpawnListEntry(new Vector2(
-                transform.position.x,
-                transform.position.y + (listItemOffsetY * listItemsCount))
+                titleObj.transform.position.x,
+                titleObj.transform.position.y + (listItemOffsetY * listItemsCount))
                 , m.name);
         }
     }
@@ -40,7 +46,6 @@ public class MovieList : MonoBehaviour
 
     private void SpawnListEntry(Vector2 position, string text)
     {
-        print("adding entry");
         GameObject listObj = Instantiate(listPrefab, position, Quaternion.identity);
         listObj.GetComponent<TextMeshPro>().text = text;
         listObj.transform.parent = transform;
@@ -62,6 +67,16 @@ public class MovieList : MonoBehaviour
         }
 
         // save data
-        controller.saveData.SavePlayerData(controller.player);
+        //controller.saveData.SavePlayerData(controller.player);
+    }
+
+    public void OpenUI()
+    {
+
+    }
+
+    public void CloseUI()
+    {
+
     }
 }

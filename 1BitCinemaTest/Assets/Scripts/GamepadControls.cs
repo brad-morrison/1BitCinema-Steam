@@ -12,6 +12,14 @@ public class GamepadControls : MonoBehaviour
 
     public void ButtonEventTriggered(string buttonName, bool isOn)
     {
+        if (!isOn)
+        {
+            playerInput.up = false;
+            playerInput.down = false;
+            playerInput.left = false;
+            playerInput.right = false;
+        }
+
         switch (buttonName)
         {
             case "up":
@@ -43,7 +51,7 @@ public class GamepadControls : MonoBehaviour
                 break;
 
             case "a":
-                controller.movieList.PopulateTable(controller.player.ownedMovies);
+                controller.saveData.SavePlayerData(controller.player);
                 break;
 
             case "b":

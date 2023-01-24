@@ -19,6 +19,7 @@ public class ArrowKey : MonoBehaviour
 
     private void OnMouseOver()
     {
+        //clicked.Invoke(function, true);
         if (controls.touchActive)
             if (function != "a" && function != "b" && function != "zoom")
                 clicked.Invoke(function, true);

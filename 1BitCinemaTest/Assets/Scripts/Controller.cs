@@ -14,6 +14,8 @@ public class Controller : MonoBehaviour
     public Player player = new Player();
     public List<Movie> allMovies;
     public List<Screen> allScreens;
+    public List<Screenings> activeScreenings;
+    public GameTime gameTime = new GameTime();
     // objects
     public MovieList movieList;
     public GameObject coinsUI;
@@ -28,6 +30,7 @@ public class Controller : MonoBehaviour
         Application.targetFrameRate = 600; // run at 60fps
         LoadData();
         PopulateUI();
+        gameTime.PrintTime();
     }
 
     public void LoadData()
@@ -40,7 +43,10 @@ public class Controller : MonoBehaviour
         // player data
         player.name = importedData.playerData.name;
         player.wealth = importedData.playerData.wealth;
-        player.ownedMovies = importedData.playerData.ownedMovies;
+        foreach (string s in importedData.playerData.ownedMovies)
+        {
+            player.ownedMovies.Add(importedData.GetMovieWithID(s));
+        }
         player.screeningRooms = importedData.playerData.screeningRooms;
 
         // screens

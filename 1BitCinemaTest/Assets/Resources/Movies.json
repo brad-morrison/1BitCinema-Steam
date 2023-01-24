@@ -3,27 +3,32 @@
       {
          "name":"Night of the Eagle",
          "genre":"horror",
-         "id":"332"
+         "id": "001",
+         "runtime": 2
       },
-      {
-         "name":"Unexpected Meetings",
-         "genre":"romance",
-         "id":"232"
-      },
-      {
-         "name":"Outcast",
-         "genre":"action",
-         "id":"103"
-      },
-      {
-         "name":"Lord of the Rings",
-         "genre":"adventure",
-         "id":"099"
-      },
-      {
-         "name":"Star Wars",
-         "genre":"sci-fi",
-         "id":"654"
-      }
+    {
+        "name": "Unexpected Meetings",
+        "genre": "romance",
+        "id": "002",
+        "runtime": 2
+    },
+    {
+        "name": "Outcast",
+        "genre": "action",
+        "id": "003",
+        "runtime": 2
+    },
+    {
+        "name": "Lord of the Rings",
+        "genre": "adventure",
+        "id": "004",
+        "runtime": 2
+    },
+    {
+        "name": "Star Wars",
+        "genre": "sci-fi",
+        "id": "005",
+        "runtime": 2
+    }
    ]
 }

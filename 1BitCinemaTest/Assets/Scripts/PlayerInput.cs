@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    public Controller controller;
     public float speed = 10.0f;
     public Rigidbody2D rb;
     public Vector2 movement;
@@ -54,6 +55,17 @@ public class PlayerInput : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = hori;
             GetComponent<SpriteRenderer>().flipX = false;
             movement = new Vector2(1, offset * -1);
+        }
+
+        if (Input.GetKey("1"))
+        {
+            
+        }
+
+        if (Input.GetKey("2"))
+        {
+            
+
         }
 
     }

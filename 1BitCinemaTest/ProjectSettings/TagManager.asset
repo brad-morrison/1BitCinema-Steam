@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Scene Objects
   - Water
   - UI
   - 
@@ -41,9 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 1507966251
-    locked: 0
   - name: dynamic objects
     uniqueID: 2574840813
+    locked: 0
+  - name: UI
+    uniqueID: 1507966251
     locked: 0
