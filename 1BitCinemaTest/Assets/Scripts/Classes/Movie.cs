@@ -10,3 +10,9 @@ public class Movie
     public string id;
     public float runtime;
 }
+
+
+// scriptable objects
+//
+// movies
+// screens

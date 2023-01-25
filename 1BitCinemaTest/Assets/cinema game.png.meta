@@ -662,7 +662,7 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -683,7 +683,7 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -704,7 +704,7 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -712,6 +712,48 @@ TextureImporter:
       bones: []
       spriteID: 3e1fa64facac9438cbf9182309cb79c2
       internalID: -318803391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 413
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8beddaacdb2b476ca0748dd52ad011a
+      internalID: 1009365203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cinema game_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 422
+        width: 86
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4324cfea383e4cb4b64b213caf54d19
+      internalID: -1812276380
       vertices: []
       indices: 
       edges: []
@@ -728,7 +770,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       floor2: 1882329326
+      door: 1009365203
       cinema game_1: 1029018967
+      cinema game_3: -1812276380
       a: -1010413112
       asmall: -507101363
       cinema game_0: 1504791146

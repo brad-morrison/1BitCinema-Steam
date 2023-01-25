@@ -51,7 +51,7 @@ public class Screenings : MonoBehaviour
             + ":"
             + controller.gameTime.timeCalc(s.movie.runtime)[1]
         );
-        controller.player.screenings[0].Countdown();
+        //controller.player.screenings[0].Countdown();
     }
 
     public int HowMuchCustomers(ScreeningRoom room, Movie movie)
