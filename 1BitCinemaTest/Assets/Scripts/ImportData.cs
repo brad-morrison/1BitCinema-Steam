@@ -8,7 +8,6 @@ public class ImportData : MonoBehaviour
     public TextAsset moviesJSON;
     public TextAsset playerJSON;
     public TextAsset screenJSON;
-    public TextAsset screeningRoomJSON;
 
     [System.Serializable]
     public class MovieList
@@ -23,6 +22,7 @@ public class ImportData : MonoBehaviour
         public float wealth;
         public List<string> ownedMovies;
         public List<ScreeningRoom> screeningRooms;
+        public List<Screening> screenings;
     }
 
     [System.Serializable]
@@ -31,24 +31,15 @@ public class ImportData : MonoBehaviour
         public List<Screen> screens;
     }
 
-    [System.Serializable]
-    public class ScreeningRoomData
-    {
-        public List<ScreeningRoom> screeningRooms;
-    }
-
     public MovieList movieList = new MovieList();
     public PlayerData playerData = new PlayerData();
     public ScreenData screenData = new ScreenData();
-    public ScreeningRoomData screeningRoomData = new ScreeningRoomData();
 
     void Awake()
     {
         movieList = JsonUtility.FromJson<MovieList>(moviesJSON.text);
         playerData = JsonUtility.FromJson<PlayerData>(playerJSON.text);
         screenData = JsonUtility.FromJson<ScreenData>(screenJSON.text);
-        screeningRoomData = JsonUtility.FromJson<ScreeningRoomData>(screeningRoomJSON.text);
-
     }
 
 

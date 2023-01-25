@@ -11,4 +11,5 @@ public class Player : MonoBehaviour
     // filled at runtime
     public List<Movie> ownedMovies;
     public List<ScreeningRoom> screeningRooms;
+    public List<Screening> screenings;
 }

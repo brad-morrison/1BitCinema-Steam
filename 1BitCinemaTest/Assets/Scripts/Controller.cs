@@ -14,7 +14,6 @@ public class Controller : MonoBehaviour
     public Player player = new Player();
     public List<Movie> allMovies;
     public List<Screen> allScreens;
-    public List<Screenings> activeScreenings;
     public GameTime gameTime = new GameTime();
     // objects
     public MovieList movieList;
@@ -35,27 +34,36 @@ public class Controller : MonoBehaviour
 
     public void LoadData()
     {
-        // movies
+        // all movies
+        //
         foreach (Movie m in importedData.movieList.movies)
         {
             allMovies.Add(m);
         }
-        // player data
-        player.name = importedData.playerData.name;
-        player.wealth = importedData.playerData.wealth;
-        foreach (string s in importedData.playerData.ownedMovies)
-        {
-            player.ownedMovies.Add(importedData.GetMovieWithID(s));
-        }
-        player.screeningRooms = importedData.playerData.screeningRooms;
 
-        // screens
+        // all screens
+        //
         foreach (Screen s in importedData.screenData.screens)
         {
             allScreens.Add(s);
         }
+
+        // player data
+        // basic variables
+        player.name = importedData.playerData.name;
+        player.wealth = importedData.playerData.wealth;
+        // owned movies
+        foreach (string s in importedData.playerData.ownedMovies)
+        {
+            player.ownedMovies.Add(importedData.GetMovieWithID(s));
+        }
         // screening rooms
-        player.screeningRooms = importedData.screeningRoomData.screeningRooms;
+        player.screeningRooms = importedData.playerData.screeningRooms;
+        // screenings
+        player.screenings = importedData.playerData.screenings;
+        
+        
+        
         
     }
 
@@ -90,7 +98,7 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKeyDown("p"))
         {
-            screenings.PlayMovie(player.screeningRooms[1], player.ownedMovies[0]);
+            screenings.PlayMovie();
         }
 
         if (Input.GetKeyDown("q"))

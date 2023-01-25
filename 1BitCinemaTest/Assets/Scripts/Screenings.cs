@@ -34,13 +34,24 @@ public class Screenings : MonoBehaviour
         //PlayMovie(controller.player.screeningRooms[0], controller.player.ownedMovies[1]);
     }
 
-    public void PlayMovie(ScreeningRoom room, Movie movie)
+    public void PlayMovie()
     {
+        /*
         Debug.Log("Playing [" + movie.name + "] in [" + room.name + "] tickets sold = [" + HowMuchCustomers(room, movie) + "/" + room.capacity + "]");
         float earnings = CalculateEarnings(HowMuchCustomers(room, movie));
         Debug.Log("Made £" + earnings + " from screening");
         controller.player.wealth += earnings;
+        */
 
+        Screening s = controller.player.screenings[0];
+        Debug.Log("playing movie - " + s.movie.name);
+        Debug.Log(
+            "This movie will finish at - "
+            + controller.gameTime.timeCalc(s.movie.runtime)[0]
+            + ":"
+            + controller.gameTime.timeCalc(s.movie.runtime)[1]
+        );
+        controller.player.screenings[0].Countdown();
     }
 
     public int HowMuchCustomers(ScreeningRoom room, Movie movie)

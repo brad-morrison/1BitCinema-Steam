@@ -1,11 +1,11 @@
 {
    "movies":[
-      {
-         "name":"Night of the Eagle",
-         "genre":"horror",
-         "id": "001",
-         "runtime": 2
-      },
+    {
+        "name":"Night of the Eagle",
+        "genre":"horror",
+        "id": "001",
+        "runtime": 2
+    },
     {
         "name": "Unexpected Meetings",
         "genre": "romance",

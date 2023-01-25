@@ -59,6 +59,14 @@ public class GameTime : MonoBehaviour
         tickInterval = 0.5f;
     }
 
+    public int[] timeCalc(float timeToAdd)
+    {
+        int[] time = new int[2];
+        time[0] = hour + (int)timeToAdd;
+        time[1] = mins;
+        return time;
+    }
+
     IEnumerator Tick()
     {
         yield return new WaitWhile(() => timeIsMoving == false);
