@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52011cca516be41fc9b1a32b12756433, type: 3}
+  m_Name: Screening 1
+  m_EditorClassIdentifier: 
+  moviePlaying: {fileID: 11400000, guid: f8f20167cb54847e58750eee6ea3821e, type: 2}
+  screenRoom: {fileID: 11400000, guid: 0330eb670a9c8451abad3618bb7b4b97, type: 2}

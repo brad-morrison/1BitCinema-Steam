@@ -59,13 +59,13 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetKey("1"))
         {
-            
+            Controller.instance.StartScreening(Controller.instance.player.cinema.screenings[0]);
         }
 
         if (Input.GetKey("2"))
         {
-            
 
+            Controller.instance.StartScreening(Controller.instance.player.cinema.screenings[1]);
         }
 
     }

@@ -746,7 +746,7 @@ TextureImporter:
         width: 86
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -754,6 +754,48 @@ TextureImporter:
       bones: []
       spriteID: e4324cfea383e4cb4b64b213caf54d19
       internalID: -1812276380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 391
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993cbf1d581374bc8af19157653735ea
+      internalID: 850034974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 391
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732068f2a8fbb4cc483d5f83b7970ddd
+      internalID: 802293454
       vertices: []
       indices: 
       edges: []
@@ -785,11 +827,13 @@ TextureImporter:
       character: 120211463
       close: 1701403139
       speech: 968997409
+      2: 802293454
       desk: 314829476
       up: -1785007853
       button_movies: -755927169
       phone: 58848671
       bsmall: 686312859
+      1: 850034974
       ray: -2111015114
       coin: 1937535147
       poster: 499579330

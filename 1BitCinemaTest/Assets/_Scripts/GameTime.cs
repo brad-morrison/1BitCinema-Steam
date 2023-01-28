@@ -30,6 +30,7 @@ public class GameTime : MonoBehaviour
     private void Awake()
     {
         StartCoroutine(Tick());
+        SetTimeUI();
     }
 
     public void PrintTime()
@@ -73,9 +74,6 @@ public class GameTime : MonoBehaviour
 
         while (timeIsMoving)
         {
-            PrintTime();
-
-         
             if (mins + tickIncrement >= 60)
             {
                 SetMins((mins + tickIncrement) - 60);

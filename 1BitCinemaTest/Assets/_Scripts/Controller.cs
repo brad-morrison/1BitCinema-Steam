@@ -9,6 +9,10 @@ public class Controller : MonoBehaviour
 
     public Player player;
     public GameTime gameTime;
+    // gameobjects
+    public GameObject infoText;
+    // prefabs
+    public Prefabs prefabs;
 
     private void Awake()
     {
@@ -26,7 +30,52 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         Application.targetFrameRate = 600; // run at 60fps
+        infoText.GetComponent<TextMeshPro>().text = "";
+        PrintAllScreenings();
+    }
+
+    public void PrintAllScreenings()
+    {
+        foreach (Screening s in instance.player.cinema.screenings)
+        {
+            Debug.Log("Movie [" + s.moviePlaying.name + "] is playing in [" + s.screenRoom.name + "]");
+        }
+    }
+
+    public void StartScreening(Screening s)
+    {
+        StartCoroutine(PlayMovie(s.moviePlaying));
+    }
+
+    IEnumerator PlayMovie(Movie moviePlaying)
+    {
+        yield return new WaitForSeconds(moviePlaying.runtime);
+        Debug.Log(moviePlaying.name + " finished playing");
     }
 
 
 }
+
+
+// menu button brainstorming
+
+// cinema admin
+// - owned movies
+// - staff
+// - sreenings
+// - screenrooms
+// - prices
+
+// store
+// - movies
+// - screens
+// - decor
+// - expansions
+
+// news
+// - latest news
+
+// stats
+
+// options
+
