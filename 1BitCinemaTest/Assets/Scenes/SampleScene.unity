@@ -152,7 +152,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22428336
 GameObject:
@@ -184,7 +184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1883588116}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &22428338
 SpriteRenderer:
@@ -431,6 +431,54 @@ MonoBehaviour:
   optionalScrambleMode: 0
   optionalShakeRandomnessMode: 0
   optionalString: 
+--- !u!1 &133604801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133604802}
+  - component: {fileID: 133604803}
+  m_Layer: 0
+  m_Name: Database
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133604802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133604801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1790705, y: 0.57913214, z: -0.44914573}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1250393806}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &133604803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133604801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2087e552cbac34550be7d6186f6850b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movieDatabase: {fileID: 11400000, guid: d9495b30128d1473288e6d8205071ab7, type: 2}
+  screenDatabase: {fileID: 11400000, guid: 7986c618bb8e048bb88fd8327d198168, type: 2}
+  screenRooms:
+  - {fileID: 11400000, guid: 7fb9cb2f4733c47cf86e6900848af9aa, type: 2}
 --- !u!1 &188939024
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,13 +647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c93827e6c648444d93e5de8be3e3333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1250393807}
-  playerInput: {fileID: 321238659}
-  up: {fileID: 1906959220}
-  left: {fileID: 1627718545}
-  right: {fileID: 1627718545}
-  down: {fileID: 1365103499}
-  touchActive: 0
 --- !u!4 &228961836
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,7 +1179,7 @@ GameObject:
   - component: {fileID: 321238664}
   - component: {fileID: 321238665}
   m_Layer: 3
-  m_Name: player_character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,7 +1294,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &321238663
 Rigidbody2D:
@@ -1484,7 +1525,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &352917467
 MonoBehaviour:
@@ -1734,7 +1775,7 @@ Transform:
   m_Children:
   - {fileID: 841118889}
   m_Father: {fileID: 1883588116}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &477457039
 GameObject:
@@ -2084,7 +2125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712567193}
   m_Layer: 0
-  m_Name: ui
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2107,7 +2148,7 @@ Transform:
   - {fileID: 1649584820}
   - {fileID: 2043283653}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802134376
 GameObject:
@@ -2332,63 +2373,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &844625349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844625351}
-  - component: {fileID: 844625350}
-  m_Layer: 0
-  m_Name: ImportData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &844625350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844625349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cda5a5f5866704c62ac516b807f265f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moviesJSON: {fileID: 4900000, guid: d98fbcc4f874c4c2f81ed1c28c8a22c7, type: 3}
-  playerJSON: {fileID: 4900000, guid: b314c46463df943729f9edadc5abf1e2, type: 3}
-  screenJSON: {fileID: 4900000, guid: 40254e99c69a448bb9a0dac1631fc209, type: 3}
-  movieList:
-    movies: []
-  playerData:
-    name: 
-    wealth: 0
-    ownedMovies: []
-    screeningRooms: []
-    screenings: []
-  screenData:
-    screens: []
---- !u!4 &844625351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844625349}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1250393806}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983115802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,38 +2536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: right
 --- !u!212 &1045093075
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2911,58 +2863,6 @@ Transform:
   m_Father: {fileID: 1883588116}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1151337792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1151337794}
-  - component: {fileID: 1151337793}
-  m_Layer: 0
-  m_Name: Screenings
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1151337793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151337792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b07cc4829d06047bea5c5c1b2a334951, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1250393807}
-  mostPopularGenre: action
-  genrePopularity_Action: 1.5
-  genrePopularity_Adventure: 0.3
-  genrePopularity_Romance: 1
-  genrePopularity_Horror: 0.6
-  genrePopularity_Animation: 1.5
-  ticketPrice: 4.99
---- !u!4 &1151337794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151337792}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1250393806}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182490731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,13 +3115,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1872398973}
-  - {fileID: 1280515061}
-  - {fileID: 1151337794}
-  - {fileID: 844625351}
+  - {fileID: 133604802}
   - {fileID: 1636030226}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1250393807
 MonoBehaviour:
@@ -3235,21 +3132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15431e0aaf0bd493a9ee91c0606c0e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  importedData: {fileID: 844625350}
-  saveData: {fileID: 1280515062}
-  screenings: {fileID: 1151337793}
-  player: {fileID: 1872398974}
-  allMovies: []
-  allScreens: []
+  player: {fileID: 11400000, guid: 9a431528e822c4e878b76919329e956c, type: 2}
   gameTime: {fileID: 1636030227}
-  movieList: {fileID: 1649584819}
-  coinsUI: {fileID: 1902876467}
-  mainCam: {fileID: 519420028}
-  camZooms:
-  - 2.96
-  - 1.66
-  - 1.4
-  cur_camZoom: 0
 --- !u!1 &1270410013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,50 +3273,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.20454545, y: 0.25}
   m_EdgeRadius: 0
---- !u!1 &1280515060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1280515061}
-  - component: {fileID: 1280515062}
-  m_Layer: 0
-  m_Name: SaveData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1280515061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280515060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1250393806}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1280515062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280515060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b65095efe302947ed8dafb6719351e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1365103499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,38 +3319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: down
 --- !u!212 &1365103503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3579,174 +3387,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.000000059604645}
   serializedVersion: 2
   m_Radius: 0.19
---- !u!1 &1392425682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392425683}
-  - component: {fileID: 1392425686}
-  - component: {fileID: 1392425685}
-  - component: {fileID: 1392425684}
-  m_Layer: 5
-  m_Name: a
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1392425683
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392425682}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.24, y: -2.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1392425684
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392425682}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.45454547, y: 0.5}
-    newSize: {x: 0.84090906, y: 0.90909094}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.53, y: 0.58}
-  m_EdgeRadius: 0
---- !u!114 &1392425685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392425682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
-        m_MethodName: DOPlayById
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: open
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: a
---- !u!212 &1392425686
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392425682}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1507966251
-  m_SortingLayer: 2
-  m_SortingOrder: 8
-  m_Sprite: {fileID: -507101363, guid: d691d11fd79354ce09f6373268edfe6d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.84090906, y: 0.90909094}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1393389446
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,13 +3573,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472143590}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.271, y: 1.385, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.87546134, y: 1.356511, z: -0.49137276}
   m_LocalScale: {x: 0.6892, y: 0.6892, z: 0.6892}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1883588116}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492837018
 GameObject:
@@ -5124,38 +4764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: left
 --- !u!212 &1627718549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5254,7 +4862,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1250393806}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1636030227
 MonoBehaviour:
@@ -5323,11 +4931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0f3f9a11fcc4dec8c5d8fe98dedc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleObj: {fileID: 2026907380}
-  controller: {fileID: 1250393807}
-  listPrefab: {fileID: 2119115561533383085, guid: 1e6b6be7870024c33a363558eb7d3d81, type: 3}
-  listItemsCount: 0
-  listItemOffsetY: -0.3
 --- !u!4 &1649584820
 Transform:
   m_ObjectHideFlags: 0
@@ -5735,13 +5338,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726027626}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.93, y: 0.199, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5344613, y: 0.17051098, z: -0.49137276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1883588116}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1726027629
 MonoBehaviour:
@@ -5969,38 +5572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: b
 --- !u!212 &1775820622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6137,55 +5708,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1872398972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1872398973}
-  - component: {fileID: 1872398974}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1872398973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872398972}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1250393806}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1872398974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872398972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478c62d1c8c6e4ae2900abc2a4fa9269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  wealth: 0
-  ownedMovies: []
-  screeningRooms: []
-  screenings: []
 --- !u!1 &1883588115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,11 +5744,13 @@ Transform:
   - {fileID: 1134082795}
   - {fileID: 1775546195}
   - {fileID: 1393389449}
+  - {fileID: 1726027628}
   - {fileID: 472990736}
   - {fileID: 2121667400}
   - {fileID: 22428337}
+  - {fileID: 1472143592}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902876467
 GameObject:
@@ -6446,38 +5970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40721cd46bcdf4a8ba54d37b6b9c0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls: {fileID: 228961835}
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clickEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228961835}
-        m_TargetAssemblyTypeName: GamepadControls, Assembly-CSharp
-        m_MethodName: ButtonEventTriggered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  function: up
 --- !u!212 &1906959224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7230,7 +6722,7 @@ Transform:
   m_Children:
   - {fileID: 1793429699}
   m_Father: {fileID: 1883588116}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &2121667401
 EdgeCollider2D:
