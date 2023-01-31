@@ -24,7 +24,7 @@ public class MenuButton : MonoBehaviour
             if (mb != this)
                 subMenuButtons.Add(mb.gameObject);
         }
-        ad
+        
     }
 
     private void Start()

@@ -13,6 +13,7 @@ public class Controller : MonoBehaviour
     public GameObject infoText;
     // prefabs
     public Prefabs prefabs;
+    public GameObject character;
 
     private void Awake()
     {
@@ -51,6 +52,19 @@ public class Controller : MonoBehaviour
     {
         yield return new WaitForSeconds(moviePlaying.runtime);
         Debug.Log(moviePlaying.name + " finished playing");
+    }
+
+    public void SpawnCharacter()
+    {
+        Instantiate(character);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("c"))
+        {
+            SpawnCharacter();
+        }
     }
 
 
