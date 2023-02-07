@@ -15,8 +15,10 @@ MonoBehaviour:
   name: Atlas Cinema
   ownedMovies:
   - {fileID: 11400000, guid: c93c3aa05938040b8b3b087324dec604, type: 2}
+  - {fileID: 11400000, guid: 90be4c92f18384d189a9cc57bc82262f, type: 2}
   screenRooms:
   - {fileID: 11400000, guid: 7fb9cb2f4733c47cf86e6900848af9aa, type: 2}
+  - {fileID: 11400000, guid: 0330eb670a9c8451abad3618bb7b4b97, type: 2}
   ownedScreens:
   - {fileID: 11400000, guid: 7a7fbeb9247f74441913965f4dd34d68, type: 2}
   - {fileID: 11400000, guid: 59a2cb07f1cee40f89930e0e550e0be9, type: 2}

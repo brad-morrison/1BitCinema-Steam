@@ -1,0 +1,21 @@
+.pixel-text {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/CG%20pixel%204x5.ttf?fileID=12800000&guid=c28ca0964719244328a53a647d4039d8&type=3#CG pixel 4x5');
+    font-size: 15px;
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/CG%20pixel%204x5%20SDF%20UI%20Toolkit.asset?fileID=11400000&guid=941f4b4cb97c1441e95fb55b6fb8e497&type=2#CG pixel 4x5 SDF UI Toolkit');
+}
+
+Label {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/CG%20pixel%204x5.ttf?fileID=12800000&guid=c28ca0964719244328a53a647d4039d8&type=3#CG pixel 4x5');
+    font-size: 15px;
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/CG%20pixel%204x5%20SDF%20UI%20Toolkit.asset?fileID=11400000&guid=941f4b4cb97c1441e95fb55b6fb8e497&type=2#CG pixel 4x5 SDF UI Toolkit');
+}
+
+Button {
+    background-color: rgba(100, 115, 115, 1);
+}

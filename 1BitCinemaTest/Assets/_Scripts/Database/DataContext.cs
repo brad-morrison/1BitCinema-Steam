@@ -2,12 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Bootstrapper
-{
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    public static void Excecte() => Object.DontDestroyOnLoad(Object.Instantiate(Resources.Load("Database")));
-}
-
 namespace MovieJSON
 {
     public class DataContext : MonoBehaviour

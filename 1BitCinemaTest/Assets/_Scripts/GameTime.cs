@@ -33,6 +33,11 @@ public class GameTime : MonoBehaviour
         SetTimeUI();
     }
 
+    public string GetTime()
+    {
+        return GetHour().ToString() + ":" + GetMins().ToString();
+    }
+
     public void PrintTime()
     {
         Debug.Log("the time is " + GetHour() + ":" + GetMins());
