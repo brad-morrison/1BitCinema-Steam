@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b26a69e5be3e43c9a9e4c6f34b4a385, type: 3}
-  m_Name: The Jungle Book
+  m_Script: {fileID: 11500000, guid: 73901042c6fdb493db744e6a819455bd, type: 3}
+  m_Name: Family
   m_EditorClassIdentifier: 
-  id: M07
-  name: The Jungle Book
-  genre: 2
-  runtime: 1.15
+  name: Family
+  price: 25

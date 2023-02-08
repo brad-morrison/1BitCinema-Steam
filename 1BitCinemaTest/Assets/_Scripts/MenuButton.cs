@@ -14,7 +14,7 @@ public class MenuButton : MonoBehaviour
     public float subMoveSpeed;
     public GameObject subMenuHighlighter;
 
-    public UnityEvent mouseOver, mouseOff;
+    public UnityEvent mouseOver, mouseOff, clicked;
 
     private void Awake()
     {
@@ -45,7 +45,7 @@ public class MenuButton : MonoBehaviour
     {
         subMenuOpen = true;
         float offsetIncrement = subMenuButtonOffset;
-        subMenuHighlighter.SetActive(false);
+        if (subMenuHighlighter) subMenuHighlighter.SetActive(false);
 
         foreach (GameObject mb in subMenuButtons)
         {
@@ -58,7 +58,7 @@ public class MenuButton : MonoBehaviour
     private void CloseSubMenu()
     {
         subMenuOpen = false;
-        subMenuHighlighter.SetActive(true);
+        if (subMenuHighlighter) subMenuHighlighter.SetActive(true);
         foreach (GameObject mb in subMenuButtons)
         {
             mb.GetComponent<BoxCollider2D>().enabled = false;
@@ -81,9 +81,15 @@ public class MenuButton : MonoBehaviour
     private void OnMouseDown()
     {
         if (subMenuOpen == false)
+        {
             OpenSubMenu();
+        }
         else
+        {
             CloseSubMenu();
+        }
+
+        clicked.Invoke();
     }
 
     IEnumerator ActivateCollider(GameObject subButton)

@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Screening", menuName = "1BitCinema/Objects/Screening")]
 public class Screening : ScriptableObject
 {
+    public string id;
     public Movie moviePlaying;
     public ScreenRoom screenRoom;
 

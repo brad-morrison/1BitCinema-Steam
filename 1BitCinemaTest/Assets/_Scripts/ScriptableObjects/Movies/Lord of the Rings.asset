@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b26a69e5be3e43c9a9e4c6f34b4a385, type: 3}
   m_Name: Lord of the Rings
   m_EditorClassIdentifier: 
-  id: M03
+  id: M04
   name: The Lord of the Rings
-  genre: Adventure
+  genre: 1
   runtime: 3.2

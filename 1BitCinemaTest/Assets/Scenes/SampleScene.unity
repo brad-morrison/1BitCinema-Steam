@@ -733,6 +733,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: ScreeningsClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!61 &175768158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1591,6 +1606,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: ScreensClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!61 &433658401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2556,7 +2586,7 @@ GameObject:
   - component: {fileID: 697406957}
   - component: {fileID: 697406956}
   m_Layer: 0
-  m_Name: button_prices
+  m_Name: button_tickets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2589,7 +2619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0269e81e3e21843309841a4aaf280be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Prices
+  name: Tickets
   subMenuButtons: []
   subMenuButtonOffset: 0
   subMenuOpen: 0
@@ -2601,6 +2631,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: TicketsClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!61 &697406957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2776,6 +2821,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: OwnedMoviesClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &746872803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4242,6 +4302,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1217904054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4469,6 +4532,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: ScreenRoomsClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!61 &1251510300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4780,6 +4858,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mouseOff:
+    m_PersistentCalls:
+      m_Calls: []
+  clicked:
     m_PersistentCalls:
       m_Calls: []
 --- !u!61 &1360128484
@@ -5268,6 +5349,9 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1445765491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5698,6 +5782,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mouseOff:
+    m_PersistentCalls:
+      m_Calls: []
+  clicked:
     m_PersistentCalls:
       m_Calls: []
 --- !u!61 &1565647791
@@ -7669,6 +7756,21 @@ MonoBehaviour:
   mouseOff:
     m_PersistentCalls:
       m_Calls: []
+  clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888627330}
+        m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+        m_MethodName: MoviesClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!61 &1817607823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8220,6 +8322,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mouseOff:
+    m_PersistentCalls:
+      m_Calls: []
+  clicked:
     m_PersistentCalls:
       m_Calls: []
 --- !u!61 &1927693073
@@ -8880,6 +8985,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2058731521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9247,6 +9355,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mouseOff:
+    m_PersistentCalls:
+      m_Calls: []
+  clicked:
     m_PersistentCalls:
       m_Calls: []
 --- !u!61 &2115916938

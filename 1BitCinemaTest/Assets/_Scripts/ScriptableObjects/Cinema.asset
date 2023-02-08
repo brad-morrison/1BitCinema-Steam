@@ -26,3 +26,4 @@ MonoBehaviour:
   screenings:
   - {fileID: 11400000, guid: 55e6f6ec379a749e5b36ae6bb45f947f, type: 2}
   - {fileID: 11400000, guid: 7121254843fdd4ff887e921d09f46ebc, type: 2}
+  tickets: {fileID: 11400000, guid: ea7a7f098034946969b0ce71177f2cdc, type: 2}

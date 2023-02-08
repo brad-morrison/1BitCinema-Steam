@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public string genre_Fav;
-    public string genre_Hate;
+    public Genre genre_Fav;
+    public Genre genre_Hate;
 
     private void Awake()
     {
         if (Random.Range(0, 2) == 0)
         {
-            genre_Fav = "Sci Fi";
-            genre_Hate = "Adventure";
+            genre_Fav = Genre.scifi;
+            genre_Hate = Genre.adventure;
         }
         else
         {
-            genre_Fav = "Adventure";
-            genre_Hate = "Sci Fi";
+            genre_Fav = Genre.adventure;
+            genre_Hate = Genre.scifi;
         }
     }
 

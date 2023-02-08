@@ -10,4 +10,5 @@ public class Cinema : ScriptableObject
     public List<ScreenRoom> screenRooms;
     public List<Screen> ownedScreens;
     public List<Screening> screenings;
+    public Tickets tickets;
 }

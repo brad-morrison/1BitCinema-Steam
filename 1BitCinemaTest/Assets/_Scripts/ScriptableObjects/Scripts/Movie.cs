@@ -7,6 +7,21 @@ public class Movie : ScriptableObject
 {
     public string id;
     public string name;
-    public string genre;
+    public Genre genre;
     public float runtime;
+}
+
+public enum Genre
+{
+    action,
+    adventure,
+    children,
+    animation,
+    scifi,
+    romance,
+    comedy,
+    drama,
+    horror,
+    musical,
+    fantasy
 }

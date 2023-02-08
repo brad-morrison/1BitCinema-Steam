@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: M01
   name: Harry Potter
-  genre: Adventure
+  genre: 10
   runtime: 1.4

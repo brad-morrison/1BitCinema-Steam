@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b26a69e5be3e43c9a9e4c6f34b4a385, type: 3}
   m_Name: Interstellar
   m_EditorClassIdentifier: 
-  id: 
+  id: M03
   name: Interstellar
-  genre: 
-  runtime: 0
+  genre: 4
+  runtime: 1.5
