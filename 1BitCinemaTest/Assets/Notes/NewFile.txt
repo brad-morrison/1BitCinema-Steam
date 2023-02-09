@@ -1,0 +1,44 @@
+﻿
+player starts with 20
+fix screen room
+add screen
+create screening
+open cinema
+customers purchase tickets
+customers watch screening
+customers leave
+player receives money
+--
+
+# Each UI Section ##
+
+## Screen Rooms ##
+
+- list of screen rooms
+- select screen
+- increase capacity
+
+## Screenings ##
+
+- list of active screenings
+- create screening
+    - choose screen
+    - choose movie
+- choose time
+- timetable?
+
+## Store ##
+
+- movies tab
+    - buy movie
+- screens tab
+    - buy screen
+- tech tab
+    - buy projector
+    - etc
+- expansions tab
+    - build screen room
+    - build store
+    - build toilets
+    - build waiting area
+    - build ticket booth
