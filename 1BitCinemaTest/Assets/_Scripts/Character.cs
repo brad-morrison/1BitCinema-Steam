@@ -79,6 +79,6 @@ public class Character : MonoBehaviour
 
     // buy tickets
     // what did i think
-    // leave
+    // leavehh
 
 }
